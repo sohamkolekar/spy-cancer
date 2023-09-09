@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title></title> 
+       <link  rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+       <link 
+       rel="stylesheet"
+       type="text/css"
+       href="style.css">
+    </head>
+    <body>
+    
+        
+            <button 
+            type="button" class="btn">
+                <img src="websiteimages/bcbtn.jpeg" width="50" height="50" onclick="history.back()">
+            </button>
+        
+            <h1 class="paragraph">Our History</h1>
+            <p class="paragraph">
+                The American Institute of Chemical Engineers (AIChE) is a professional<br> "
+                organization for chemical engineers.AIChE was established in 1908 to <br>
+                distinguish chemical engineers as a profession independent of chemists<br>
+                and mechanical engineers. Student chapters at various universities around<br>
+                the world have also been established throughout its history. The student<br> 
+                chapters tend to focus on providing networking opportunities in both<br>
+                academia and in industry as well as increasing student involvement locally and nationally.<br>
+                
+                The institute opened membership in the Division to all, irrespective of<br> 
+                membership in AIChE, and hundreds of scientists and engineers of all disciplines<br>
+                took advantage of the opportunity
+
+
+                
+            </p>
+            <div class="slideshow-container"></div>
+                <div class="des">
+                    <img src="achevements/1.jpeg" class="age">
+                    <p style="font-size: 20px;">Outstanding Student Chapter Award (2020-21)<br>
+                        We are elated to announce the awards and <br>
+                        recognitions earned by AIChE NIT Rourkela <br>
+                        Student Chapter.<br>
+                        
+                        ● Freshman Recognition Award (Arpit S. Pati)<br>
+                        
+                        ● ScaleUp Sponsors Essay Contest, Chevron (Utkarsh Mishra)<br>              
+                        
+                        ● Sophomore Academic Excellence Award (Shubham Giri)</p>
+                </div>
+
+                <div class="des">
+                    <img src="achevements/2.jpeg" class="age">
+                    <p>International ChemE Jeopardy Competition
+                        "The secret of success is to do the common thing uncommonly well."<br>
+                        Team XYZ from AIChE NITR comprising of Swagat, Millen, Birupakhya<br>
+                        & Swastik pulled off a fantastic win after a fascinating and brainstorming<br>
+                        session and emerged as the International ChemE Jeopardy Champion. Hearty <br> 
+                        Congratulations to the team and best of luck for their future endeavors.</p>
+                </div>
+
+                <div class="des">
+                    <img src="achevements/3.jpeg" class="age">
+                    <p>
+                        Outstanding Student Chapter Award <br>
+                    This Award is presented annually to those Student<br>
+                    Chapters that show an exceptional level of participation,<br>
+                    enthusiasm, program quality, professionalism, and involvement<br>
+                    in the university and community through variety of activities,<br>
+                    including career guidance, community outreach, departmental activities,<br>
+                    social events, plant trips, sporting events and participation<br>
+                    in local, regional and global AIChE programs. AIChE NITR Student<br>
+                    Chapter was the recipient of this award in 2020 which was one<br>
+                    of the proudest achievements of our chapter by far.<br>
+                    </p>
+                </div>
+
+                <div class="des">
+                    <img src="achevements/4.jpeg" class="age">
+                </div>
+
+                <div class="des">
+                    <img src="achevements/4.jpeg" class="age">
+                </div>
+
+                <div class="des">
+                    <img src="achevements/5.jpeg" class="age">
+                </div>
+
+                <div class="des">
+                    <img src="achevements/7.jpeg" class="age">
+                </div>
+            </div>
+           
+   
+
+        <script>
+            let slideIndex=0;
+            showslides();
+            function showslides(){
+                let i;
+                let slides=document.getElementsByClassName("des")
+
+                for(i=0;i<slides.length;i++){
+                    slides[i].style.display="none"
+                    //first all the images are deleted by above line and from
+                    // the line below one element is displayed at a time
+                }
+                slideIndex++
+                if(slideIndex>slides.length){
+                    slideIndex=1;
+                }
+                slides[slideIndex-1].style.display="flex";
+                setTimeout(showslides,2000)
+            }
+        </script>
+    </body>
+</html>
